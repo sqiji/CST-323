@@ -28,7 +28,7 @@ public class LoginController {
 	@Autowired 
 	private SecurityBusinessService security; 
 	
-	@GetMapping("/login")
+	@GetMapping("/")
 	public String display(Model model) {
 		LoginModel loginModel = new LoginModel();
 		model.addAttribute("title", "Login Form");
@@ -36,11 +36,13 @@ public class LoginController {
 		return "login";
 	}
 	
+	/*
 	@GetMapping("/")
 	public String getIndex()
 	{
-		return "index";
+		return "Index";
 	}
+	*/
 	
 	@PostMapping("/doLogin")
 	public String doLogin(@Valid LoginModel loginModel, BindingResult bindingResult, Model model) {
@@ -57,7 +59,8 @@ public class LoginController {
 		//return "login";
 
 		service.test();
-		security.authenticate(getIndex(), getIndex());
+		security.authenticate(loginModel.getUsername(), loginModel.getPassword());
+		//security.authenticate(getIndex(), getIndex());
 		
 		//Create some order using List
 		List<OrderModel> orders = service.getOrders();
