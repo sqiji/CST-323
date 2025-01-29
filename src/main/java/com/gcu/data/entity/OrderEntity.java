@@ -8,6 +8,7 @@ import org.springframework.data.relational.core.mapping.Table;
 public class OrderEntity {
 	
 	@Id
+	@Column("ID")
 	private long id;
 	
 	@Column("ORDER_NO")
