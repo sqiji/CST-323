@@ -47,7 +47,7 @@ public class OrderDataService implements DataAccessInterface<OrderEntity> {
 	@Override
 	public List<OrderEntity> findAll() {
 		
-		//String sql = "SELECT * FROM ORDERS";
+		String sql = "SELECT * FROM ORDERS";
 		List<OrderEntity> orders = new ArrayList<OrderEntity>();
 		
 		try {
