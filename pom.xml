@@ -19,6 +19,8 @@
 	</properties>
 	
 	<dependencies>
+		
+		
 		<dependency>
 			<groupId>com.google.cloud.sql</groupId>
 			<artifactId>mysql-socket-factory-connector-j-8</artifactId>
@@ -44,6 +46,8 @@
 			<version>2.3.3</version>
 			<scope>runtime</scope>
 		</dependency>
+		
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -83,6 +87,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jdbc</artifactId>
 		</dependency>
+		
+		<!-- Adding Spring Boot AOP dependency-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		
+
 	</dependencies>
 
 	<build>
