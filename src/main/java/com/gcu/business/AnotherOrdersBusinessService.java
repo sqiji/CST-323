@@ -9,7 +9,7 @@ public class AnotherOrdersBusinessService implements OrdersBusinessServiceInterf
 
 	@Override
 	public void test() {
-		System.out.println("Soran, hello from the AnotherOrdersBusinessService");
+		
 	}
 
 	@Override

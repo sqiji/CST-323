@@ -37,6 +37,7 @@ public class OrdersRestService {
 	
 	@GetMapping(value="/orders", produces= {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
 	public List<OrderModel> getOrders(){
+		logger.trace("==========> In getOrders()");
 		return service.getOrders();
 	} 
 	
