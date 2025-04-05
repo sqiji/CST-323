@@ -35,7 +35,7 @@ public class LoginController {
 	
 	@GetMapping("/")
 	public String display(Model model) {
-		logger.trace("==========> In display()");
+		logger.trace("==========> In display() to display login page");
 		LoginModel loginModel = new LoginModel();
 		model.addAttribute("title", "Login Form");
 		model.addAttribute("loginModel", loginModel);
